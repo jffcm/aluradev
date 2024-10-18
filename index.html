@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraDev</title>
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/container.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+
+    <link rel="stylesheet" href="./src/css/form.css">
+</head>
+<body>
+    <header class="header debug">
+        <img class="header__logo" 
+             src="./src/assets/images/Logo.png" 
+             alt="Logo da Página"
+             loading="lazy">
+        <input class="header__input debug" 
+               type="search"
+               placeholder="Busque por algo">
+        <div class="header__icons">
+            <img class="header__icon" 
+                 id="magnifying-glass-icon"
+                 src="./src/assets/images/magnifying-glass.png" 
+                 alt="Ícone de Busca"
+                 loading="lazy">
+            <img class="header__icon" 
+                 id="bars-icon"
+                 src="./src/assets/images/bars.png" 
+                 alt="Menu"
+                 loading="lazy">     
+        </div>
+        <div class="user-profile debug">
+            <img class="user-profile__avatar"
+                 src="./src/assets/images/avatar.jpg"
+                 alt="Foto de Perfil do Usuário"
+                 loading="lazy"
+                 >
+            <span class="user-profile__name">Hideki</span>
+        </div>
+    </header>
+    <main class="container debug">
+        <aside class="sidebar">
+            <nav class="sidebar__nav">
+                <ul class="sidebar__list">
+                    <li class="sidebar__title">Menu</li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="/">
+                            <img class="sidebar__link-icon" 
+                                 id="code-editor-icon"
+                                 src="./src/assets/images/code-editor.png" 
+                                 alt="Ícone do Editor de Código"
+                                 loading="lazy">
+                            <span class="sidebar__link-text">Editor de código</span>
+                        </a>
+                    </li>
+                    <li class="sidebar__item">
+                        <a class="sidebar__link" href="#">
+                            <img class="sidebar__link-icon" 
+                                 id="community-icon"
+                                 src="./src/assets/images/community.png" 
+                                 alt="Ícone da Comunidade"
+                                 loading="lazy">
+                            <span class="sidebar__link-text">Comunidade</span> 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="code-editor-wrapper debug">
+            <div class="code-editor debug">
+                <img id="mac-buttons" 
+                         src="./src/assets/images/mac_buttons.svg" 
+                         alt="Botões do macOS"
+                         loading="lazy">
+                <textarea class="code-editor__textarea"></textarea>
+            </div>
+            <button class="button">Visualizar com o highlight</button>
+        </div>
+    
+        <form class="form__container">
+            <span class="form__title">Seu projeto</span>
+            <div class="form__project">
+                <input class="form__project-name" 
+                       id="project-name"
+                       type="text"
+                       placeholder="Nome do seu projeto">
+                <textarea class="form__project-description"
+                          placeholder="Descrição do seu projeto"></textarea>
+            </div>
+            <div class="customization">
+                <span class="customization__title">Personalização</span>
+                <div class="customization__options">
+                    <select class="customization__language" id="project-language">
+                        <option value="javascript">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                    <input class="customization__color" type="color">
+                </div>
+            </div>
+            <button class="form__button">Salvar projeto</button>
+        </form>
+    </main>
+    <script src="./src/js/backgroundColorPicker.js" defer></script>
+</body>
+</html>
