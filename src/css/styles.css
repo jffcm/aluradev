@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 
+.debug {
+    border: 1px solid #ffff00;
+} */
+
+:root {
+    /* Colors */
+    --bg-color: #051D3B; 
+    --text-color: #fff;
+
+    --input-color: #2d415b;
+    --input-hover-color: #41536a;
+
+    --border-color: #6BD1FF;
+
+    --button-color: #5081FB; 
+    --button-hover-color: #7BA4FC;
+    --button-focus-color: #96B9FD;
+
+    --code-editor-color: #141414;
+    --shadows: rgb(0,0,0,0.24);
+    
+    /* Fonts */
+    --inter: "Inter";
+    --roboto-mono: "Roboto Mono";
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--inter);
+    color: var(--text-color);
+
+    margin: 1rem;
+}
+
